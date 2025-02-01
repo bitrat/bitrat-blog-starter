@@ -1,6 +1,7 @@
 ---
 title: Blog post 2
 date: 2022-08-06T21:09:03+02:00
+draft: true
 
 ---
 

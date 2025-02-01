@@ -1,6 +1,6 @@
 ---
-title: "Zen demo site"
-baseURL: "https://zen-demo.xdeb.org/"
+title: "Bitrat Tech"
+baseURL: "https://bitrat.tech/"
 theme: "github.com/frjo/hugo-theme-zen/v4"
 languageCode: "en-GB"
 defaultContentLanguage: "en"
@@ -19,29 +19,18 @@ markup:
     renderer:
       unsafe: true
 
-outputFormats:
-  SearchIndex:
-    mediaType: "application/json"
-    baseName: "searchindex"
-    isPlainText: true
-    notAlternative: true
-
-outputs:
-  home: ["HTML","RSS", "JSON", "SearchIndex"]
-  section: ["HTML","RSS", "JSON"]
-
 params:
   author:
-    name: "Fredrik Jonsson"
-    url: "https://xdeb.org"
-  contact: "frjo@xdeb.org"
+    name: "Britta Bitrat"
+    url: "https://bitrat.tech"
+  contact: ""
   copyright: '<!--Creative Commons License-->This site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> licence.<!--/Creative Commons License-->'
-  description: "The zen theme for Hugo demo site."
+  description: "The zen theme"
   dateformat: "2 January, 2006"
-  favicon: "apple-touch-icon.png"
+  favicon: "favicon.png"
   feedlinks: true
-  icon: "apple-touch-icon.png"
-  image: "apple-touch-icon.png"
+  icon: "favicon.png"
+  image: "BitratTechIllustration.png"
   imageMaxWidth: 400
   logoWidth: 64
   logoHeight: 64
@@ -68,30 +57,5 @@ languages:
         - Name: "Blog"
           weight: 2
           pageRef: "/blog/"
-        - Name: "Podcast"
-          weight: 4
-          pageRef: "/podcast/"
-        - Name: "Products"
-          weight: 6
-          pageRef: "/products/"
-        - Name: "Misc"
-          weight: 8
-          pageRef: "/misc/"
-        - Name: "Search"
-          weight: 10
-          pageRef: "/search/"
-        - Name: "Contact"
-          weight: 12
-          pageRef: "/contact/"
 
-  sv:
-    weight: 2
-    languageName: "Svenska"
-    languageCode: "sv-SE"
-    contentDir: content/sv
-    menu:
-      main:
-        - Name: "Hem"
-          weight: -10
-          pageRef: "/"
 
