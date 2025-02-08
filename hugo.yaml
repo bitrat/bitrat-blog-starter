@@ -23,14 +23,14 @@ params:
   author:
     name: "Britta Bitrat"
     url: "https://bitrat.tech"
-  contact: ""
+  #contact: ""
   copyright: '<!--Creative Commons License-->This site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> licence.<!--/Creative Commons License-->'
   description: "The zen theme"
   dateformat: "2 January, 2006"
-  favicon: "favicon.png"
-  feedlinks: true
-  icon: "favicon.png"
-  image: "BitratTechIllustration.png"
+  favicon: "apple-touch-icon.png"
+  feedlinks: false
+  icon: "apple-touch-icon.png"
+  image: "logo.png"
   imageMaxWidth: 400
   logoWidth: 64
   logoHeight: 64
@@ -39,7 +39,7 @@ params:
   mobileMenu: true
   mobileMenuOutline: true
   poweredby: true
-  realfavicongenerator: true
+  realfavicongenerator: false
   sidebar: false
   submitted: true
 

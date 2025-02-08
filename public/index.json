@@ -1,0 +1,19 @@
+
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "The How To's of a Digital Mechanic on Bitrat Tech",
+    "description": "Recent content in The How To's of a Digital Mechanic on Bitrat Tech",
+    "home_page_url": "http://localhost:1313/",
+    "feed_url": "http://localhost:1313/index.json",
+    "language": "en-GB",
+    "icon": "http://localhost:1313/favicon.png",
+    "favicon": "http://localhost:1313/favicon.png",
+    "authors": [
+        {
+            "name": "Britta Bitrat",
+            "url": "https://bitrat.tech"
+        }
+    ],
+    "items": [
+        ]
+}
