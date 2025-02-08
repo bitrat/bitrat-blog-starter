@@ -11,6 +11,14 @@ Text
 
 Text
 
+# Add links
+##Text around Links
+This is a demo site for the [Hugo zen theme](https://github.com/frjo/hugo-theme-zen) (GitHub).
+
+Source code for [Zen demo site](https://github.com/frjo/zen-demo) (GitHub).
+## No text around links
+{{< figure src="images/image1.jpeg" caption="Include a caption."  alt="Alt text for the image" >}} 
+
 # How to setup and keep producing podcasts
 <p>The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.
 <!--more-->
