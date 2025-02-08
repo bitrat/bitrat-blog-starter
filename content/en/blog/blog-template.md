@@ -39,8 +39,14 @@ Elements can have attributes, which control how the elements work. For example, 
 ## Ordered List
 
 1. First item
+	* subitem for Item 1
+		* subitem for Item 1
 2. Second item
+	* subitem for Item 2
+		* subitem for Item 2
 3. Third item
+	* subitem for Item 3
+		* subitem for Item 3
 
 ## Unordered List
 
