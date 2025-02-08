@@ -19,19 +19,19 @@ Pre-requisites for getting the episode completed:
 * Download the RAW audio files from Zoom as a backup ("RAW" folder"
 
 ## Descript
-* Create new audio Project in "Interviews" folder "Episode x - Interview with <Name>"
+* Create new audio Project in "Interviews" folder "Episode x - Interview with "<Name>""
 * RAW interview file - Import audio from Zoom into Descript directly (or download and import each speaker audio separately)
 	* Select "Transcribe"
-	* add speaker labels '<v Dr Pam>'**nospace**
+	* add speaker labels "<"v Dr Pam">"**nospace**
 	* Edit transcript
 	* At end of audio get rid of "anything else" question (if this makes sense)
 * Apply Studio Sound (if necessary, otherwise skip this step)
 * Move Interview from "Interviews" folder into "Interviews\Edited interviews" folder
-* In "Template-Projects" folder - Duplicate appropriate project template then Move it to "Episodes\In Progress" folder - re-name to "Episode x - Interview with <Name>"
+* In "Template-Projects" folder - Duplicate appropriate project template then Move it to "Episodes\In Progress" folder - re-name to "Episode x - Interview with "<"Name">""
 * From the "Interviews\Edited interviews" folder - Open edited interview then copy text & paste edited interview audio (do not transcribe) below "Interview" marker
 * Make sure background music in correct place (in Layer)
-* Double-check title of entire script is "Episode x -Interview with <Name>"
-* Rename the "Interview" marker in the Transcript to "Interview with <name>"
+* Double-check title of entire script is "Episode x -Interview with "<"Name">""
+* Rename the "Interview" marker in the Transcript to "Interview with "<"Name">""
 * Move Interview from "Interviews\Edited Interviews" to "used-in-a-script" folder
 * add Dr Pam's intro, transcribe and edit
 	* adjust audio boundaries on timeline (insert gap, make sure audio in full for each section)
@@ -39,8 +39,8 @@ Pre-requisites for getting the episode completed:
 	* adjust audio boundaries on timeline (insert gap, make sure audio in full for each section)
 * Open interview from "Interviews\Edited Interviews\Used-in-a-script" 
 	* Check Markers are properly labelled
-* Publish - Export - subtitles - edit Episode in Librewriter (check <v speaker> tags)
-	* Name vtt file "Episode x - Interview with <name>"
+* Publish - Export - subtitles - edit Episode in Librewriter (check "<"v speaker">" tags)
+	* Name vtt file "Episode x - Interview with "<"Name">""
 	* Run Auto-tag py script (to add the speaker labels that are missing in vtt file)
 * Publish - Export - audio mp3 - name it EditedInterview
 	* include markers
