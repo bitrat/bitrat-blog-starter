@@ -6,4 +6,3 @@ draft: false
 <p>
 The How To's and musings of a Digital Mechanic.
 <p>
-<p>
