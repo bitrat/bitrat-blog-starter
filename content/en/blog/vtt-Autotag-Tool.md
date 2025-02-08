@@ -20,9 +20,10 @@ NOTE: this python script is supplied, as is (it works for me, feel free to mod f
 * Install python on your PC
 * Create a folder to contain the vtt-auto.py script 
 * Add your .vtt file (exported from Descript - with 42 character setting) into the same folder as vtt-auto.py script
-	* rename your .vtt input file to **IN-EpX.vtt**
-* run the pythion script from the same folder that the IN-EpX.vtt in
+	* rename your .vtt input file to **IN-Epx.vtt**
+* run the pythion script from the same folder that the IN-Epx.vtt in
 	* py .\vtt-AutoTag-Tool.py
+* The output .vtt file called OUT-Epx.vtt is what you can upload to Pinecast transcript 
 # vtt-AutoTag-Tool.py script
 [The python script and a test .vtt file](https://github.com/bitrat/bitrat-blog-starter/tree/main/vtt-Autotag) (an actual Descript .vtt exported file that shows the issue the script will solve) can be downloaded from my repository on github
 
