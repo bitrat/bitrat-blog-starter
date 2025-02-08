@@ -22,7 +22,7 @@ Pre-requisites for getting the episode completed:
 * Create new audio Project in "Interviews" folder "Episode x - Interview with <Name>"
 * RAW interview file - Import audio from Zoom into Descript directly (or download and import each speaker audio separately)
 	* Select "Transcribe"
-	* add speaker labels <v Dr Pam>**nospace**
+	* add speaker labels '<v Dr Pam>'**nospace**
 	* Edit transcript
 	* At end of audio get rid of "anything else" question (if this makes sense)
 * Apply Studio Sound (if necessary, otherwise skip this step)
