@@ -7,12 +7,11 @@ draft: false
 
 Apps like Descript, when you export .vtt subtitle files, will not tag the speakers on every 42 character line output, they only voice tag on speaker changes. This does not currently allow podcasting distributors like Pinecast to recognize the speakers and format the transcript accordingly. These platforms expect speaker tagging on ALL separate 42 character subtitle lines.
 For a Disability podcast like [Disability Disrupters](https://pinecast.com/feed/disability-disrupters) that must have captions and transcriptions available for each Episode, this missing feature for Descript is a major manual time waster for me, per Episode.
-<p>
-[Feb 2025 - Here's where I lodged the bug report with Descript in August 2024, before solving it with my janky python script](https://descript.canny.io/feature-requests/p/voice-tags-in-vtt) - upvote if you agree that Descript should solve this, so we don't have to do these crazy script hacks.
+[Here's where I lodged the bug report with Descript in August 2024, before solving it with my janky python script](https://descript.canny.io/feature-requests/p/voice-tags-in-vtt) - upvote if you agree that Descript should solve this, so we don't have to do these crazy script hacks.
 <p>This python script has made my 1-2 hour manual voice tag process into a 5 minute one, which is why I am sharing my process and the script.
 <p>
 NOTE: this python script is supplied, as is (it works for me, feel free to modify it for your own use)
-<p>
+
 # Pre-Requisites
 * The Descript speakers in the transcript before Export, need to already be labelled **&lt;v SPEAKERNAME&gt;**
 	* the python script looks for **&lt;v SPEAKERNAME&gt;** to add speaker tags to the .vtt file where they are missing, this made the python script simpler for me to construct than pure speaker names
