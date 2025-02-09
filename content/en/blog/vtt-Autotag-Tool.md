@@ -11,8 +11,8 @@ This is a demo site for the [Feb 2025 - Here's where I lodged the bug report wit
 <p>This python script has made my 1-2 hour manual voice tag process into a 5 minute one, which is why I am sharing my process and the script.
 <p>
 NOTE: this python script is supplied, as is (it works for me, feel free to modify it for your own use)
-
-##Pre-requisites
+<p>
+# Pre-Requisites
 * The Descript speakers in the transcript before Export, need to already be labelled **&lt;v SPEAKERNAME&&gt;**  (the python script looks for **&lt;v** to change speaker tags where they are missing, this made the python script simpler for me to construct)
 	* Basically, when you import speaker audio into Descript and transcribe, name that speaker from the get-go **&lt;v SPEAKERNAME&&gt;**
 * Install python on your PC (one-time setup)
