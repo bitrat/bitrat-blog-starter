@@ -1,6 +1,6 @@
 ---
 title: Workflow for Disability Disrupters Podcast using Descript
-date: 2025-02-08T17:30:00+13:00
+date: 2025-04-22T17:30:00+13:00
 draft: false
 
 ---
@@ -16,38 +16,72 @@ Pre-requisites for getting the episode completed:
 ## Setup Zoom meeting 
 * Zoom meet settings need to be: auto record, set to cloud, people can join anytime
 * Once interview finished, wait for recording to process
-* Download the RAW audio files from Zoom as a backup ("RAW" folder)
+* Copy "EpxTEMPLATE-Descript" folder and rename to "Episode x - Interview with &lt;Name&gt;"
+* Download the RAW audio files from Zoom into "RAW" folder
 
 ## Descript
+### Edit Interview
 * Create new audio Project in "Interviews" folder "Episode x - Interview with &lt;Name&gt;"
 * RAW interview file - Import audio from Zoom into Descript directly (or download and import each speaker audio separately)
 	* Select "Transcribe"
 	* add speaker labels &lt;v Dr Pam&gt;**nospace**
+	* Underlord - **Remove filler words**
 	* Edit transcript
-	* At end of audio get rid of "anything else" question (if this makes sense)
-* Apply Studio Sound (if necessary, otherwise skip this step)
+		* At start of audio get rid of "tell us about yourself" question (if this makes sense)
+		* At end of audio get rid of "anything else" question (if this makes sense)
+	* Apply Studio Sound (if necessary, otherwise skip this step)
 * Move Interview from "Interviews" folder into "Interviews\Edited interviews" folder
-* In "Template-Projects" folder - Duplicate appropriate project template then Move it to "Episodes\In Progress" folder - re-name to "Episode x - Interview with &lt;Name&gt;"
-* From the "Interviews\Edited interviews" folder - Open edited interview then copy text & paste edited interview audio (do not transcribe) below "Interview" marker
-* Make sure background music in correct place (in Layer)
-* Double-check title of entire script is "Episode x -Interview with &lt;Name&gt;"
-* Rename the "Interview" marker in the Transcript to "Interview with &lt;Name&gt;"
+
+### Duplicate Template - edit Episode
+* In "Template-Projects" folder
+	* Duplicate appropriate project template 
+	* Move it to "Episodes\In Progress" folder 
+		* re-name project to "Episode x - Interview with &lt;Name&gt;"
+* From the "Interviews\Edited interviews" folder
+	* Open edited interview 
+	* copy text & paste edited interview audio (do not re-transcribe) below "Interview" marker in "Episode x - Interview with &lt;Name&gt;" project
+	* Double-check title of entire script is "Episode x -Interview with &lt;Name&gt;"
+	* Rename the "Interview" marker in the Transcript to "Interview with &lt;Name&gt;"
+	* add Dr Pam's intro, transcribe and edit
+	* add "Ask Dr Pam" segment, transcribe and edit	
+	* add Dr Pam's outro, transcribe and edit
+	* Make sure background music in correct place (in Layer - Large - scroll audio layer)
+		* adjust audio boundaries on timeline (insert gap, make sure audio in full for each section)	
 * Move Interview from "Interviews\Edited Interviews" to "used-in-a-script" folder
-* add Dr Pam's intro, transcribe and edit
-	* adjust audio boundaries on timeline (insert gap, make sure audio in full for each section)
-* add Dr Pam's outro, transcribe and edit
-	* adjust audio boundaries on timeline (insert gap, make sure audio in full for each section)
-* Open interview from "Interviews\Edited Interviews\Used-in-a-script" 
+
+### Export Draft Episode Audio
+* Open episode from "Interviews\Episodes\In Progress" folder
 	* Check Markers are properly labelled
-* Publish - Export - subtitles - edit Episode in Librewriter (check &lt;v speaker&gt; tags)
-	* Name vtt file "Episode x - Interview with &lt;Name&gt;"
-	* Run Auto-tag py script (to add the speaker labels that are missing in vtt file)
-* Publish - Export - audio mp3 - name it EditedInterview
-	* include markers
+	* **Export - Audio** 
+		* Local Export
+		* Current Composition
+		* mp3
+		* Metadata – Show title - "Episode x – Disability Disrupters"
+		* Metadata – Episode title - "Interview with <Name>"
+		* SAVE AS-  "DRAFT-EditedInterview-Episode x - Interview with <Name>"
+		* Copy to Shared folder for podcast host to review
 	* check size of audio is less than 135 MB (pinecast plan limit)
-		
-## test-Podcast-Episodes folder
-* Place edited audio and transcripts into that folder 
+	* Listen to the DRAFT audio (transition points)
+
+### Review Draft Episode Audio
+* Podcast Host reviews "DRAFT-EditedInterview-Episode x - Interview with <Name>"
+	* implement changes
+	* Save "FINAL-EditedInterview-Episode x - Interview with <Name>"
+
+### Export and process transcript (vtt file)
+* **Export - Subtitles**
+	* Name file "IN-Epx.vtt" and place into **vtt-Autotag** folder
+		* Open "IN-Epx.vtt" and remove "Descript" text
+	* Run Auto-tag py script (to add the speaker labels that are missing in vtt file)
+		* cmd.exe from vtt-Autotag folder
+		* py .\vtt-AutoTag-Tool.py
+	* Rename the resultant "Out-Expx.vtt" file "FINAL-Episode x - Interview with &lt;Name&gt;"
+		* Open "Out-Expx.vtt" and remove <v TestPerson> text
+		* Put macrons back in (if you had to remove them for script not to fail)
+	* Move file to FINAL folder
+
+## Shared Podcast Episodes folder
+* Place FINAL audio and transcripts into that folder 
 
 ## Produce time/text markers for Pinecast show notes section
 * Upload edited audio to https://mp3chapters.github.io/
