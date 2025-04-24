@@ -57,26 +57,27 @@ Pre-requisites for getting the episode completed:
 		* Current Composition
 		* mp3
 		* Metadata – Show title - "Episode x – Disability Disrupters"
-		* Metadata – Episode title - "Interview with <Name>"
-		* SAVE AS-  "DRAFT-EditedInterview-Episode x - Interview with <Name>"
+		* Metadata – Episode title - "Interview with &lt;Name&gt;"
+		* SAVE AS-  "DRAFT-EditedInterview-Episode x - Interview with &lt;Name&gt;"
 		* Copy to Shared folder for podcast host to review
 	* check size of audio is less than 135 MB (pinecast plan limit)
 	* Listen to the DRAFT audio (transition points)
 
 ### Review Draft Episode Audio
-* Podcast Host reviews "DRAFT-EditedInterview-Episode x - Interview with <Name>"
+* Podcast Host reviews "DRAFT-EditedInterview-Episode x - Interview with &lt;Name&gt;"
 	* implement changes
-	* Save "FINAL-EditedInterview-Episode x - Interview with <Name>"
+	* Save "FINAL-EditedInterview-Episode x - Interview with &lt;Name&gt;"
 
 ### Export and process transcript (vtt file)
 * **Export - Subtitles**
 	* Name file "IN-Epx.vtt" and place into **vtt-Autotag** folder
 		* Open "IN-Epx.vtt" and remove "Descript" text
+		* Replace all instances of &gt;: with &gt;
 	* Run Auto-tag py script (to add the speaker labels that are missing in vtt file)
 		* cmd.exe from vtt-Autotag folder
 		* py .\vtt-AutoTag-Tool.py
 	* Rename the resultant "Out-Expx.vtt" file "FINAL-Episode x - Interview with &lt;Name&gt;"
-		* Open "Out-Expx.vtt" and remove <v TestPerson> text
+		* Open "Out-Expx.vtt" and remove &lt;v TestPerson&gt; text
 		* Put macrons back in (if you had to remove them for script not to fail)
 	* Move file to FINAL folder
 
