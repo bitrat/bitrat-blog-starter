@@ -48,13 +48,15 @@ line_count = 0
 digit_line = 0
 for line in readLines:
     line_count += 1
+
     print(line)
-    
-	if line[0:2].isdigit():
+    if line[0:2].isdigit():
         digit_line=line_count
 
     if (line_count == digit_line+1):
+
         try:
+            #x = re.search(r"^\<v[^\(]*[:]", line)
             x = re.search(r"^\<v[^\(]*[>]", line)
             currentTag = x.group(0)
             fileOut.write(line)
@@ -63,9 +65,8 @@ for line in readLines:
             fileOut.write(out)
     else:
         fileOut.write(line)
-		
 fileIn.close()     
-fileOut.close() 
+fileOut.close()      
      
 {{< /highlight >}}
 

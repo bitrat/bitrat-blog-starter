@@ -102,6 +102,7 @@ Pre-requisites for getting the episode completed:
 * tick link to tip jar
 * Save Episode
 * Upload episode transcript file
+	NOTE: If you make a mistake and have to re-upload transcript file, F5 the transcript page after deletion, before you upload a new file*
 * Speaker A - go into edit mode on transcript text, and change Speaker A combo box to the correct speaker
 
 ## After Episode has been published (after 8 hours)
