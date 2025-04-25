@@ -1,14 +1,10 @@
-# Zen demo site
+# Infrastructure for the Bitrat.Tech website
+The bitrat.tech website theme is based on, and adapted from, the Zen Hugo theme.
 
-The zen theme for Hugo demo site.
+* View the Zen theme demo site: <https://zen-demo.xdeb.org>
+* Download Zen theme at: <https://github.com/frjo/hugo-theme-zen>
 
-* View the demo site: <https://zen-demo.xdeb.org>
-* Download theme at: <https://github.com/frjo/hugo-theme-zen>
-
-Feel free to use this repo as a template if you want it as a quickstart for your site. Use the green "Use this template" button above.
-
-## Features
-
+## Features of the Zen theme
 * GitHub pages site.
 * Auto deployed on push via GitHub actions, see [workflow file](https://github.com/frjo/zen-demo/blob/main/.github/workflows/pages.yaml).
 * Zen theme loaded as a Go module (update with `hugo mod get -u`).
