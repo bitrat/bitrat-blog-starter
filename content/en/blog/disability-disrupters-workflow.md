@@ -1,17 +1,20 @@
 ---
 title: Workflow for Disability Disrupters Podcast using Descript
-date: 2025-04-25T11:30:00+13:00
+date: 2025-04-25T14:30:00+13:00
 draft: false
 
 ---
 
 # Workflow steps
+## High level overview
 Pre-requisites for getting the episode completed:
+* Dr Pam's intro and outro
+* "Ask Dr Pam" segment
 * Interviewee bio
+* Runsheet for what Adverts to include
 * Edited Episode audio
 * Edited Episode transcript (for deaf and deafblind)
-* Dr Pam's intro and outro
-* Runsheet for what Adverts to include
+
 
 ## Setup Zoom meeting 
 * Zoom meet settings need to be: auto record, set to cloud, people can join anytime
@@ -21,7 +24,7 @@ Pre-requisites for getting the episode completed:
 
 ## Descript
 ### Edit Interview
-* Create new audio Project in "Interviews" folder "Episode x - Interview with &lt;Name&gt;"
+* Create new audio Project in "Interviews" folder "Interview with &lt;Name&gt;"
 * RAW interview file - Import audio from Zoom into Descript directly (or download and import each speaker audio separately)
 	* Select "Transcribe"
 	* add speaker labels &lt;v Dr Pam&gt;**nospace**
@@ -30,14 +33,14 @@ Pre-requisites for getting the episode completed:
 		* At start of audio get rid of "tell us about yourself" question (if this makes sense)
 		* At end of audio get rid of "anything else" question (if this makes sense)
 	* Apply Studio Sound (if necessary, otherwise skip this step)
-* Move Interview from "Interviews" folder into "Interviews\Edited interviews" folder
+* Move Interview from "Interviews" folder into "Interviews\Edited-Interviews" folder
 
 ### Duplicate Template - edit Episode
 * In "Template-Projects" folder
 	* Duplicate appropriate project template 
-	* Move it to "Episodes\In Progress" folder 
+	* Move it to "Episodes\In-Progress" folder 
 		* re-name project to "Episode x - Interview with &lt;Name&gt;"
-* From the "Interviews\Edited interviews" folder
+* From the "Interviews\Edited-Interviews" folder
 	* Open edited interview 
 	* copy text & paste edited interview audio (do not re-transcribe) below "Interview" marker in "Episode x - Interview with &lt;Name&gt;" project
 	* Double-check title of entire script is "Episode x -Interview with &lt;Name&gt;"
@@ -46,11 +49,11 @@ Pre-requisites for getting the episode completed:
 	* add "Ask Dr Pam" segment, transcribe and edit	
 	* add Dr Pam's outro, transcribe and edit
 	* Make sure background music in correct place (in Layer - Large - scroll audio layer)
-		* adjust audio boundaries on timeline (insert gap, make sure audio in full for each section)	
-* Move Interview from "Interviews\Edited Interviews" to "used-in-a-script" folder
+		* adjust audio boundaries on timeline (insert gaps, make sure audio in full for each section)	
+* Move Interview from "Interviews\Edited Interviews" to "Interviews\Used-in-a-script" folder
 
 ### Export Draft Episode Audio
-* Open episode from "Interviews\Episodes\In Progress" folder
+* Open episode from "Interviews\Episodes\In-Progress" folder
 	* Check Markers are properly labelled
 	* **Export - Audio** 
 		* Local Export
@@ -72,7 +75,7 @@ Pre-requisites for getting the episode completed:
 * **Export - Subtitles**
 	* Name file "IN-Epx.vtt" and place into **vtt-Autotag** folder
 		* Open "IN-Epx.vtt" and remove "Descript" text
-		* Replace all instances of &gt;: with &gt;
+		* Replace all instances of &gt;: with &gt; (Control+H - Replace All)
 	* Run Auto-tag py script (to add the speaker labels that are missing in vtt file)
 		* cmd.exe from vtt-Autotag folder
 		* py .\vtt-AutoTag-Tool.py
@@ -84,19 +87,17 @@ Pre-requisites for getting the episode completed:
 ## Shared Podcast Episodes folder
 * Place FINAL audio and transcripts into that folder 
 
-## Produce time/text markers for Pinecast show notes section
-* Upload edited audio to https://mp3chapters.github.io/
-* Copy markers
-* paste into pinecast Episode Notes (see below), or keep a copy of these for later
-		
-## Pinecast
+## Pinecast and Podcast Marker generation
 * Title "Interview with ... "
 * Upload audio mp3
 * tick "don't upload art work"
 * Choose 1st of Month 12:01 AM
 * Get rid of Episode Notes title	
 	* Paste show notes (interviewee bios)
-	* Paste Text Markers (2 spaces at end of line)
+	* Generate and Paste Text Markers (2 spaces at end of line):
+		* Upload edited audio to https://mp3chapters.github.io/
+		* Copy markers
+		* paste into Pinecast Episode Notes and type 2 spaces at end of each line (markdown equivalent of newline)
 	* Add Footnote credits
 * tick link to transcript
 * tick link to tip jar
