@@ -1,5 +1,5 @@
 # Infrastructure for the Bitrat.Tech website
-The bitrat.tech website theme is based on, and adapted from, the Zen Hugo theme.
+The <https://bitrat.tech> website theme is based on, and adapted from, the Zen Hugo theme.
 
 * View the Zen theme demo site: <https://zen-demo.xdeb.org>
 * Download Zen theme at: <https://github.com/frjo/hugo-theme-zen>
