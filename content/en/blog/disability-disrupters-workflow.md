@@ -24,9 +24,9 @@ Pre-requisites for getting the episode completed:
 
 ## Descript
 ### Edit Interview
-* Create new folder in "Episodes\" folder, named "Episode x -Interview with &lt;Name&gt;"
-* Create new folder in "Episodes\Episode x -Interview with &lt;Name&gt;" folder, named "Edited"
-* Create new audio Project in "Episodes\Episode x -Interview with &lt;Name&gt;" folder "Interview with &lt;Name&gt;"
+* Create new folder in "Episodes\In-Progress\" folder, named "Episode x -Interview with &lt;Name&gt;"
+* Create new folder in "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\" folder, named "Edited"
+* Create new audio Project in "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;" folder "Interview with &lt;Name&gt;"
 * RAW interview file - Import audio from Zoom into Descript directly (or download and import each speaker audio separately)
 	* Select "Transcribe"
 	* add speaker labels &lt;v Dr Pam&gt;**nospace**
@@ -35,16 +35,16 @@ Pre-requisites for getting the episode completed:
 		* At start of audio get rid of "tell us about yourself" question (if this makes sense)
 		* At end of audio get rid of "anything else" question (if this makes sense)
 	* Apply Studio Sound (if necessary, otherwise skip this step)
-* Move Interview from "Episodes\Episode x -Interview with &lt;Name&gt;\" folder into "Episodes\Episode x -Interview with &lt;Name&gt;\Edited" folder
+* Move Interview from "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\" folder into "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\Edited" folder
 
-* All RAW Audio resides in "Episodes\Episode x -Interview with &lt;Name&gt;\" folder until it is **Edited**
+* All RAW Audio resides in "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\" folder until it is **Edited**
 
 ### Duplicate Template - edit Episode
 * In "Template-Projects" folder
 	* Duplicate appropriate project template 
-	* Move it into "Episodes\Episode x -Interview with &lt;Name&gt;" folder 
+	* Move it into "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;" folder 
 		* re-name project to "Episode x - Interview with &lt;Name&gt;"
-* From the "Episodes\Episode x -Interview with &lt;Name&gt;\Edited" folder
+* From the "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\Edited" folder
 	* Open edited interview 
 	* copy text & paste edited interview audio (do not re-transcribe) below "Interview" marker in "Episode x - Interview with &lt;Name&gt;" audio project
 	* Double-check title of entire script is "Episode x -Interview with &lt;Name&gt;"
@@ -56,7 +56,7 @@ Pre-requisites for getting the episode completed:
 		* adjust audio boundaries on timeline (insert gaps, make sure audio in full for each section)	
 
 ### Export Draft Episode Audio
-* Open episode from "Episodes\Episode x -Interview with &lt;Name&gt;" folder
+* Open episode from "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;" folder
 	* Check Markers are properly labelled
 	* **Export - Audio** 
 		* Local Export
@@ -73,6 +73,9 @@ Pre-requisites for getting the episode completed:
 * Podcast Host reviews "DRAFT-EditedInterview-Episode x - Interview with &lt;Name&gt;"
 	* implement changes
 	* Save "FINAL-EditedInterview-Episode x - Interview with &lt;Name&gt;"
+	
+### Move In-progress Episode folder to Released folder
+* Move "Episode x -Interview with &lt;Name&gt;" folder in Descript from "Episodes\In-Progress\" to "Episodes\Released" folder
 
 ### Export and process transcript (vtt file)
 * **Export - Subtitles**
