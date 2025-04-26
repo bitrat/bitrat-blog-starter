@@ -1,6 +1,6 @@
 ---
 title: Workflow for Disability Disrupters Podcast using Descript
-date: 2025-04-25T14:30:00+13:00
+date: 2025-04-26T15:15:00+13:00
 draft: false
 
 ---
@@ -24,7 +24,9 @@ Pre-requisites for getting the episode completed:
 
 ## Descript
 ### Edit Interview
-* Create new audio Project in "Interviews" folder "Interview with &lt;Name&gt;"
+* Create new folder in "Episodes\" folder, named "Episode x -Interview with &lt;Name&gt;"
+* Create new folder in "Episodes\Episode x -Interview with &lt;Name&gt;" folder, named "Edited"
+* Create new audio Project in "Episodes\Episode x -Interview with &lt;Name&gt;" folder "Interview with &lt;Name&gt;"
 * RAW interview file - Import audio from Zoom into Descript directly (or download and import each speaker audio separately)
 	* Select "Transcribe"
 	* add speaker labels &lt;v Dr Pam&gt;**nospace**
@@ -33,16 +35,18 @@ Pre-requisites for getting the episode completed:
 		* At start of audio get rid of "tell us about yourself" question (if this makes sense)
 		* At end of audio get rid of "anything else" question (if this makes sense)
 	* Apply Studio Sound (if necessary, otherwise skip this step)
-* Move Interview from "Interviews" folder into "Interviews\Edited-Interviews" folder
+* Move Interview from "Episodes\Episode x -Interview with &lt;Name&gt;\" folder into "Episodes\Episode x -Interview with &lt;Name&gt;\Edited" folder
+
+* All RAW Audio resides in "Episodes\Episode x -Interview with &lt;Name&gt;\" folder until it is **Edited**
 
 ### Duplicate Template - edit Episode
 * In "Template-Projects" folder
 	* Duplicate appropriate project template 
-	* Move it to "Episodes\In-Progress" folder 
+	* Move it into "Episodes\Episode x -Interview with &lt;Name&gt;" folder 
 		* re-name project to "Episode x - Interview with &lt;Name&gt;"
-* From the "Interviews\Edited-Interviews" folder
+* From the "Episodes\Episode x -Interview with &lt;Name&gt;\Edited" folder
 	* Open edited interview 
-	* copy text & paste edited interview audio (do not re-transcribe) below "Interview" marker in "Episode x - Interview with &lt;Name&gt;" project
+	* copy text & paste edited interview audio (do not re-transcribe) below "Interview" marker in "Episode x - Interview with &lt;Name&gt;" audio project
 	* Double-check title of entire script is "Episode x -Interview with &lt;Name&gt;"
 	* Rename the "Interview" marker in the Transcript to "Interview with &lt;Name&gt;"
 	* add Dr Pam's intro, transcribe and edit
@@ -50,10 +54,9 @@ Pre-requisites for getting the episode completed:
 	* add Dr Pam's outro, transcribe and edit
 	* Make sure background music in correct place (in Layer - Large - scroll audio layer)
 		* adjust audio boundaries on timeline (insert gaps, make sure audio in full for each section)	
-* Move Interview from "Interviews\Edited Interviews" to "Interviews\Used-in-a-script" folder
 
 ### Export Draft Episode Audio
-* Open episode from "Interviews\Episodes\In-Progress" folder
+* Open episode from "Episodes\Episode x -Interview with &lt;Name&gt;" folder
 	* Check Markers are properly labelled
 	* **Export - Audio** 
 		* Local Export
