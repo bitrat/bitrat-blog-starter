@@ -1,6 +1,6 @@
 ---
 title: Workflow for Disability Disrupters Podcast using Descript
-date: 2025-04-26T15:15:00+13:00
+date: 2025-05-27T21:30:00+13:00
 draft: false
 
 ---
@@ -81,7 +81,7 @@ Pre-requisites for getting the episode completed:
 * **Export - Subtitles**
 	* Name file "IN-Epx.vtt" and place into **vtt-Autotag** folder
 		* Open "IN-Epx.vtt" and remove "Descript" text
-		* Replace all instances of &gt;: with &gt; (Control+H - Replace All)
+		* Replace all instances of &gt;:**space** with &gt;**no space** (Control+H - Replace All)
 	* Run Auto-tag py script (to add the speaker labels that are missing in vtt file)
 		* cmd.exe from vtt-Autotag folder
 		* py .\vtt-AutoTag-Tool.py
@@ -104,7 +104,7 @@ Pre-requisites for getting the episode completed:
 		* Upload edited audio to https://mp3chapters.github.io/
 		* Copy markers
 		* paste into Pinecast Episode Notes and type 2 spaces at end of each line (markdown equivalent of newline)
-	* Add Footnote credits
+	* Add **Episode Description Footnote**
 * tick link to transcript
 * tick link to tip jar
 * Save Episode
