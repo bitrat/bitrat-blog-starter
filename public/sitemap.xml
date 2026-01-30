@@ -3,10 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-02-02T11:38:00+13:00</lastmod>
+    <lastmod>2025-05-27T21:30:00+13:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-02T11:38:00+13:00</lastmod>
+    <lastmod>2025-05-27T21:30:00+13:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/disability-disrupters-workflow/</loc>
+    <lastmod>2025-05-27T21:30:00+13:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/vtt-autotag-tool/</loc>
+    <lastmod>2025-04-22T18:10:00+13:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

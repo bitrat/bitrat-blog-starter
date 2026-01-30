@@ -4,5 +4,5 @@ draft: false
 ---
 <p>
 <p>
-The How To's and musings of a Digital Mechanic.
+The How To's and musings of a Digital Mechanic
 <p>
