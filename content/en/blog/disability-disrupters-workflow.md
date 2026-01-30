@@ -13,7 +13,7 @@ Pre-requisites for getting the episode completed:
 * Interviewee bio
 * Runsheet for what Adverts to include
 * Edited Episode audio
-* Edited Episode transcript (for deaf and deafblind)
+* Edited Episode vtt transcript (for deaf and deafblind)
 
 
 ## Setup Zoom meeting 
@@ -23,54 +23,48 @@ Pre-requisites for getting the episode completed:
 * Download the RAW audio files from Zoom into "RAW" folder
 
 ## Descript
-### Edit Interview
-* Create new folder in "Episodes\In-Progress\" folder, named "Episode x -Interview with &lt;Name&gt;"
-* Create new folder in "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\" folder, named "Edited"
-* Create new audio Project in "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;" folder "Interview with &lt;Name&gt;"
-* RAW interview file - Import audio from Zoom into Descript directly (or download and import each speaker audio separately)
-	* Select "Transcribe"
-	* add speaker labels &lt;v Dr Pam&gt;**nospace**
-	* Underlord - **Remove filler words**
-	* Edit transcript
-		* At start of audio get rid of "tell us about yourself" question (if this makes sense)
-		* At end of audio get rid of "anything else" question (if this makes sense)
-	* Apply Studio Sound (if necessary, otherwise skip this step)
-* Move Interview from "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\" folder into "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\Edited" folder
-
-* All RAW Audio resides in "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\" folder until it is **Edited**
-
 ### Duplicate Template - edit Episode
+* Create new folder in "Episodes\In-Progress\" folder, named "Episode x -Interview with &lt;Name&gt;"
 * In "Template-Projects" folder
 	* Duplicate appropriate project template 
 	* Move it into "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;" folder 
 		* re-name project to "Episode x - Interview with &lt;Name&gt;"
-* From the "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;\Edited" folder
-	* Open edited interview 
-	* copy text & paste edited interview audio (do not re-transcribe) below "Interview" marker in "Episode x - Interview with &lt;Name&gt;" audio project
-	* Double-check title of entire script is "Episode x -Interview with &lt;Name&gt;"
-	* Rename the "Interview" marker in the Transcript to "Interview with &lt;Name&gt;"
-	* add Dr Pam's intro, transcribe and edit
-	* add "Ask Dr Pam" segment, transcribe and edit	
-	* add Dr Pam's outro, transcribe and edit
-	* Make sure background music in correct place (in Layer - Large - scroll audio layer)
-		* adjust audio boundaries on timeline (insert gaps, make sure audio in full for each section)	
+
+### Edit Interview
+* Import RAW interview files - make them part of same composition
+    * Select "Transcribe"
+    * Add speaker labels &lt;v Dr Pam&gt;**nospace**
+    * Underlord - **Remove filler words**  
+    * Edit transcript  
+        * At start of audio get rid of "**tell us about yourself**" question (if this makes sense)  
+	* At end of audio get rid of "**anything else**" question (if this makes sense)  
+	* Apply Studio Sound (to parts of the audio,if necessary, otherwise skip this step)  
+		* NOTE: the start audio will not have music if it's applied there - check  
+	* Rename the "Interview with" and other markers in the Transcript  
+	* add Dr Pam's intro, transcribe and edit  
+	* add "Ask Dr Pam" segment, transcribe and edit  
+	* add Dr Pam's outro, transcribe and edit  
+	* Make sure background music in correct place (in Layer - Large - scroll audio layer)  
+		* adjust audio boundaries on timeline (insert gaps, make sure audio in full for each section)  	
 
 ### Export Draft Episode Audio
 * Open episode from "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;" folder
-	* Check Markers are properly labelled
+	* Check Markers again - properly labelled ?
 	* **Export - Audio** 
 		* Local Export
 		* Current Composition
 		* mp3
 		* Metadata – Show title - "Episode x – Disability Disrupters"
 		* Metadata – Episode title - "Interview with &lt;Name&gt;"
-		* SAVE AS-  "DRAFT-EditedInterview-Episode x - Interview with &lt;Name&gt;"
-		* Copy to Shared folder for podcast host to review
+		* SAVE AS - "DRAFT-version1-EditedInterview-Episode x - Interview with &lt;Name&gt;"
 	* check size of audio is less than 135 MB (pinecast plan limit)
 	* Listen to the DRAFT audio (transition points)
+	* Copy to Shared folder for podcast host to review
+
+### Check Interviewee Episode Notes/Bio received
 
 ### Review Draft Episode Audio
-* Podcast Host reviews "DRAFT-EditedInterview-Episode x - Interview with &lt;Name&gt;"
+* Podcast Host reviews "DRAFT-version1-EditedInterview-Episode x - Interview with &lt;Name&gt;"
 	* implement changes
 	* Save "FINAL-EditedInterview-Episode x - Interview with &lt;Name&gt;"
 	
