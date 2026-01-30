@@ -3,12 +3,13 @@
 {{ define "main" -}}
 <main class="main layout__main">
 {{ .Content }}
-
-{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
-{{ $paginator := .Paginate $pages -}}
-{{ range $paginator.Pages -}}
-{{ end -}}
-
-{{ partial "pagination-lite.html" . }}
+  <ul>
+    {{/* This looks for ALL regular blog posts anywhere in the site */}}
+    {{ range .Site.RegularPages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
 </main>
 {{ end -}}
