@@ -1,5 +1,5 @@
 ---
-title: Blog section
+title: List of Blog articles
 weight: 1
 
 ---

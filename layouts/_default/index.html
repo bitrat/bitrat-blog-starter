@@ -3,12 +3,14 @@
 {{ define "main" -}}
 <main class="main layout__main">
 {{ .Content }}
-
-{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
-{{ $paginator := .Paginate $pages -}}
-{{ range $paginator.Pages -}}
-{{ end -}}
-
-{{ partial "pagination-lite.html" . }}
+<h2>Recent Posts</h2>
+  <ul>
+    {{/* This tells Hugo to specifically get pages from the 'blog' section */}}
+    {{ range (where .Site.RegularPages "Section" "blog") }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
 </main>
 {{ end -}}

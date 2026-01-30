@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog section on Bitrat Tech</title>
+    <title>List of Blog articles on Bitrat Tech</title>
     <link>http://localhost:1313/blog/</link>
-    <description>Recent content in Blog section on Bitrat Tech</description>
+    <description>Recent content in List of Blog articles on Bitrat Tech</description>
     <generator>Hugo</generator>
     <language>en-GB</language>
     <lastBuildDate>Tue, 27 May 2025 21:30:00 +1300</lastBuildDate>
