@@ -7,7 +7,6 @@
 {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
 {{ $paginator := .Paginate $pages -}}
 {{ range $paginator.Pages -}}
-{{ .Render "summary" }}
 {{ end -}}
 
 {{ partial "pagination-lite.html" . }}
