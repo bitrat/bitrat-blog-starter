@@ -17,13 +17,15 @@ NOTE: this python script is supplied, as is (it works for me, feel free to modif
 	* the python script looks for **&lt;v SPEAKERNAME&gt;** to add speaker tags to the .vtt file where they are missing, this made the python script simpler for me to construct than pure speaker names
 	* Basically, when you import speaker audio into Descript and transcribe, name that speaker from the get-go **&lt;v SPEAKERNAME&gt;**
 * Install python on your PC (one-time setup)
-* Create a **vtt-Autotag** folder to contain the **vtt-Autotag-Tool.py** script 
+* Create a **vtt-Autotag** folder and add the **vtt-Autotag-Tool.py** script there
+* **Macrons are not processed well** - note what line in the file those are and add back in after processing
 * Add your .vtt file (exported from Descript - with 42 character setting) into the same folder as the vtt-Autotag-Tool.py script
 	* rename your .vtt input file to **IN-Epx.vtt** (this is what the python script expects - modify your script to suit your own workflow)
 * run the python script from the same folder that the IN-Epx.vtt is in
 	* py .\vtt-AutoTag-Tool.py
 		* NOTE: If you get an error, you might have macrons/non utf-8 unicode in your text - change the encoding type in the script
 * The output .vtt file will be called **OUT-Epx.vtt**. This is what you can upload as a Pinecast transcript 
+* Add macrons back in
 
 # vtt-AutoTag-Tool.py script
 [The python script and a test .vtt file](https://github.com/bitrat/bitrat-blog-starter/tree/main/vtt-Autotag) (an actual Descript .vtt exported file that shows the issue the script will solve) can be downloaded from my repository on github
