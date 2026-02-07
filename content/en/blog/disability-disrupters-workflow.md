@@ -23,14 +23,13 @@ Pre-requisites for getting the episode completed:
 * Download the RAW audio files from Zoom into "RAW" folder
 
 ## Descript
-### Duplicate Template - edit Episode
-* Create new folder in "Episodes\In-Progress\" folder, named "Episode x -Interview with &lt;Name&gt;"
+### Duplicate Template
 * In "Template-Projects" folder
 	* Duplicate appropriate project template 
-	* Move it into "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;" folder 
+	* Move it into "Episodes\In-Progress\ folder 
 		* re-name project to "Episode x - Interview with &lt;Name&gt;"
 
-### Edit Interview
+### Insert and Edit Interview audio
 * Import RAW interview files - make them part of same composition
     * Select "Transcribe"
     * Add speaker labels &lt;v Dr Pam&gt;**nospace**
@@ -48,7 +47,7 @@ Pre-requisites for getting the episode completed:
 		* adjust audio boundaries on timeline (insert gaps, make sure audio in full for each section)  	
 
 ### Export Draft Episode Audio
-* Open episode from "Episodes\In-Progress\Episode x -Interview with &lt;Name&gt;" folder
+* Open episode from "Episodes\In-Progress\ folder
 	* Check Markers again - properly labelled ?
 	* **Export - Audio** 
 		* Local Export
@@ -56,20 +55,17 @@ Pre-requisites for getting the episode completed:
 		* mp3
 		* Metadata – Show title - "Episode x – Disability Disrupters"
 		* Metadata – Episode title - "Interview with &lt;Name&gt;"
-		* SAVE AS - "DRAFT-version1-EditedInterview-Episode x - Interview with &lt;Name&gt;"
+		* SAVE AS - "DRAFT-version1-Episode x - Interview with &lt;Name&gt;"
 	* check size of audio is less than 135 MB (pinecast plan limit)
-	* Listen to the DRAFT audio (transition points)
+	* Listen to the DRAFT audio (especially the transition points)
 	* Copy to Shared folder for podcast host to review
 
 ### Check Interviewee Episode Notes/Bio received
 
 ### Review Draft Episode Audio
-* Podcast Host reviews "DRAFT-version1-EditedInterview-Episode x - Interview with &lt;Name&gt;"
+* Podcast Host reviews "DRAFT-version1-Interview with &lt;Name&gt;"
 	* implement changes
-	* Save "FINAL-EditedInterview-Episode x - Interview with &lt;Name&gt;"
-	
-### Move In-progress Episode folder to Released folder
-* Move "Episode x -Interview with &lt;Name&gt;" folder in Descript from "Episodes\In-Progress\" to "Episodes\Released" folder
+	* Save "FINAL-Episode x - Interview with &lt;Name&gt;"
 
 ### Export and process transcript (vtt file)
 * **Export - Subtitles**
@@ -109,3 +105,4 @@ Pre-requisites for getting the episode completed:
 ## After Episode has been published (after 8 hours)
 * check Apple podcasts (markers good ?)
 * check DRNZ website (episode on episode lists page ?)
+* In Descript - Move "Episode x -Interview with &lt;Name&gt;" folder in Descript from "Episodes\In-Progress\" to "Episodes\Released" folder
