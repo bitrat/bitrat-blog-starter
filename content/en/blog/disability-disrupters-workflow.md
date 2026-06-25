@@ -1,19 +1,17 @@
 ---
 title: Workflow for Disability Disrupters Podcast using Descript
-date: 2025-05-27T21:30:00+13:00
+date: 2026-06-25T21:30:00+13:00
 draft: false
 
 ---
 
 # Workflow steps
 ## High level overview
-Pre-requisites for getting the episode completed:
+Additional requisites for getting the episode completed:
 * Dr Pam's intro and outro
-* "Ask Dr Pam" segment
+* "Ask Dr Pam" or "Deep Dive" segments (also their intros)
 * Interviewee bio
-* Runsheet for what Adverts to include
-* Edited Episode audio
-* Edited Episode vtt transcript (for deaf and deafblind)
+* Runsheet for order and which Adverts
 
 
 ## Setup Zoom meeting 
@@ -36,12 +34,10 @@ Pre-requisites for getting the episode completed:
     * Underlord - **Remove filler words**  
     * Edit transcript  
         * At start of audio get rid of "**tell us about yourself**" question (if this makes sense)  
-	* At end of audio get rid of "**anything else**" question (if this makes sense)  
-	* Apply Studio Sound (to parts of the audio,if necessary, otherwise skip this step)  
-		* NOTE: the start audio will not have music if it's applied there - check  
-	* Rename the "Interview with" and other markers in the Transcript  
+	* At end of audio get rid of "**anything else**" question (if this makes sense)   
+	* Rename the "Interview with" marker and any other markers in the Transcript  
 	* add Dr Pam's intro, transcribe and edit  
-	* add "Ask Dr Pam" segment, transcribe and edit  
+	* add "Ask Dr Pam" or "Deep Dive" segment and their intros, transcribe and edit  
 	* add Dr Pam's outro, transcribe and edit  
 	* Make sure background music in correct place (in Layer - Large - scroll audio layer)  
 		* adjust audio boundaries on timeline (insert gaps, make sure audio in full for each section)  	
@@ -66,6 +62,7 @@ Pre-requisites for getting the episode completed:
 * Podcast Host reviews "DRAFT-version1-Interview with &lt;Name&gt;"
 	* implement changes
 	* Save "FINAL-Episode x - Interview with &lt;Name&gt;"
+		* Move audio file to FINAL folder
 
 ### Export and process transcript (vtt file)
 * **Export - Subtitles**
@@ -78,7 +75,8 @@ Pre-requisites for getting the episode completed:
 	* Rename the resultant "Out-Expx.vtt" file "FINAL-Episode x - Interview with &lt;Name&gt;"
 		* Open "Out-Expx.vtt" and remove &lt;v TestPerson&gt; text
 		* Put macrons back in (if you had to remove them for script not to fail)
-	* Move file to FINAL folder
+			* Find any ? characters that should be Māori macrons and replace those
+	* Move .vtt file to FINAL folder
 
 ## Shared Podcast Episodes folder
 * Place FINAL audio and transcripts into that folder 

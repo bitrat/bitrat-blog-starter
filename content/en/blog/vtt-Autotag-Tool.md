@@ -18,7 +18,7 @@ NOTE: this python script is supplied, as is (it works for me, feel free to modif
 	* Basically, when you import speaker audio into Descript and transcribe, name that speaker from the get-go **&lt;v SPEAKERNAME&gt;**
 * Install python on your PC (one-time setup)
 * Create a **vtt-Autotag** folder and add the **vtt-Autotag-Tool.py** script there
-* **Macrons are not processed well** - note what line in the file those are and add back in after processing
+* **Macrons are not processed well** - note what line in the file those are (as ? characters) and add back in after processing
 * Add your .vtt file (exported from Descript - with 42 character setting) into the same folder as the vtt-Autotag-Tool.py script
 	* rename your .vtt input file to **IN-Epx.vtt** (this is what the python script expects - modify your script to suit your own workflow)
 * run the python script from the same folder that the IN-Epx.vtt is in
@@ -31,8 +31,8 @@ NOTE: this python script is supplied, as is (it works for me, feel free to modif
 [The python script and a test .vtt file](https://github.com/bitrat/bitrat-blog-starter/tree/main/vtt-Autotag) (an actual Descript .vtt exported file that shows the issue the script will solve) can be downloaded from my repository on github
 
 {{< highlight html >}}
-import re
 
+import re
 from shutil import move
 
 x = ""
@@ -40,35 +40,42 @@ currentTag = "<v TestPerson>"
 filename = './IN-Epx.vtt'
 filename2 = './OUT-Epx.vtt'
 
-fileIn = open(filename, "r", encoding="utf-8")
+# Explicitly open with UTF-8 to handle special characters smoothly
+fileIn = open(filename, "r", encoding="utf-8", errors='replace')
 readLines = fileIn.readlines()
-print("readlines :",readLines)
+print("readlines :", readLines)
 
-fileOut = open(filename2, 'w')
+# Explicitly open output with UTF-8 to avoid Windows cp1252 crashes
+fileOut = open("OUT-Epx.vtt", "w", encoding="utf-8")
 
 line_count = 0
 digit_line = 0
+
 for line in readLines:
     line_count += 1
-
     print(line)
+    
     if line[0:2].isdigit():
-        digit_line=line_count
+        digit_line = line_count
 
-    if (line_count == digit_line+1):
-
-        try:
-            #x = re.search(r"^\<v[^\(]*[:]", line)
-            x = re.search(r"^\<v[^\(]*[>]", line)
+    # If this is the text line directly following a timestamp line
+    if line_count == digit_line + 1:
+        # Search for an existing speaker tag like <v Person>
+        x = re.search(r"^\<v[^\(]*[>]", line)
+        
+        if x is not None:
+            # Found an existing tag! Update our tracker and write the line as-is
             currentTag = x.group(0)
             fileOut.write(line)
-        except AttributeError:
-            out = currentTag+line  
+        else:
+            # No tag found (like on the 'wh?nau' line). Auto-prepend the last known tag.
+            out = currentTag + line  
             fileOut.write(out)
     else:
         fileOut.write(line)
+
 fileIn.close()     
-fileOut.close()      
+fileOut.close() 
      
 {{< /highlight >}}
 
