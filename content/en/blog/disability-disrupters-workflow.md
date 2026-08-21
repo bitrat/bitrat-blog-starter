@@ -66,16 +66,13 @@ Additional requisites for getting the episode completed:
 
 ### Export and process transcript (vtt file)
 * **Export - Subtitles**
+	* NOTE: Do not use Libre-office Writer for any of this, it adds bung tags, just rename the exported Descript .vtt file
 	* Name file "IN-Epx.vtt" and place into **vtt-Autotag** folder
-		* Open "IN-Epx.vtt" and remove "Descript" text
-		* Replace all instances of &gt;:**space** with &gt;**no space** (Control+H - Replace All)
 	* Run Auto-tag py script (to add the speaker labels that are missing in vtt file)
 		* cmd.exe from vtt-Autotag folder
 		* py .\vtt-AutoTag-Tool.py
-	* Rename the resultant "Out-Expx.vtt" file "FINAL-Episode x - Interview with &lt;Name&gt;"
-		* Open "Out-Expx.vtt" and remove &lt;v TestPerson&gt; text
-		* Put macrons back in (if you had to remove them for script not to fail)
-			* Find any ? characters that should be Māori macrons and replace those
+	* Resultant file is "IN-Epx - tagged.vtt" file 
+		* rename to "FINAL-Episode x - Interview with &lt;Name&gt;"
 	* Move .vtt file to FINAL folder
 
 ## Shared Podcast Episodes folder
@@ -101,6 +98,10 @@ Additional requisites for getting the episode completed:
 * Speaker A - go into edit mode on transcript text, and change Speaker A combo box to the correct speaker
 
 ## After Episode has been published (after 8 hours)
+* Login to Wordpress wp-admin panel 
+	* left hand side -> Simple Podcast Press (plugin)
+		* Settings
+			* click "Import New Episodes" once. It'll pull in the new episode, correctly categorised, with nothing doubled up.
 * check Apple podcasts (markers good ?)
 * check DRNZ website (episode on episode lists page ?)
 * In Descript - Move "Episode x -Interview with &lt;Name&gt;" folder in Descript from "Episodes\In-Progress\" to "Episodes\Released" folder
