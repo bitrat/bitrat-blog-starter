@@ -83,9 +83,10 @@ Additional requisites for getting the episode completed:
 * Upload audio mp3
 * tick "don't upload art work"
 * Choose 1st of Month 12:01 AM
-* Get rid of Episode Notes title	
+* Replace Episode Notes title	
 	* Paste show notes (interviewee bios)
-	* Generate and Paste Text Markers (2 spaces at end of line):
+		* 2 spaces at end of each section (or check markdown option)
+	* Generate and Paste Text Markers (2 spaces at end of each line):
 		* Upload edited audio to https://mp3chapters.github.io/
 		* Copy markers
 		* paste into Pinecast Episode Notes and type 2 spaces at end of each line (markdown equivalent of newline)
@@ -95,7 +96,7 @@ Additional requisites for getting the episode completed:
 * Save Episode
 * Upload episode transcript file
 	* NOTE: If you make a mistake and have to re-upload transcript file, delete transcript, then **F5** the transcript page, before you upload a new transcript
-* Speaker A - go into edit mode on transcript text, and change Speaker A combo box to the correct speaker
+	* Speaker A - go into edit mode on transcript text, and change Speaker A combo box to the correct speaker
 
 ## After Episode has been published (after 8 hours)
 * Login to Wordpress wp-admin panel 
