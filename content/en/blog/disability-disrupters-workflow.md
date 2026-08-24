@@ -15,6 +15,7 @@ Additional requisites for getting the episode completed:
 
 
 ## Setup Zoom meeting 
+* Ask person what town and country they are in, then get the timezone compared to NZ timezone
 * Zoom meet settings need to be: auto record, set to cloud, people can join anytime
 * Once interview finished, wait for recording to process
 * Copy "EpxTEMPLATE-Descript" folder and rename to "Episode x - Interview with &lt;Name&gt;"
@@ -66,12 +67,11 @@ Additional requisites for getting the episode completed:
 
 ### Export and process transcript (vtt file)
 * **Export - Subtitles**
-	* NOTE: Do not use Libre-office Writer for any of this, it adds bung tags, just rename the exported Descript .vtt file
-	* Name file "IN-Epx.vtt" and place into **vtt-Autotag** folder
+	* Place exported .vtt file into **vtt-Autotag** folder
 	* Run Auto-tag py script (to add the speaker labels that are missing in vtt file)
 		* cmd.exe from vtt-Autotag folder
 		* py .\vtt-AutoTag-Tool.py
-	* Resultant file is "IN-Epx - tagged.vtt" file 
+	* Resultant file is "xxx - tagged.vtt" file 
 		* rename to "FINAL-Episode x - Interview with &lt;Name&gt;"
 	* Move .vtt file to FINAL folder
 
