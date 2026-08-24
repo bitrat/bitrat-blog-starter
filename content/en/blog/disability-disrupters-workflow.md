@@ -53,7 +53,7 @@ Additional requisites for getting the episode completed:
 		* Metadata – Show title - "Episode x – Disability Disrupters"
 		* Metadata – Episode title - "Interview with &lt;Name&gt;"
 		* SAVE AS - "DRAFT-version1-Episode x - Interview with &lt;Name&gt;"
-	* check size of audio is less than 135 MB (pinecast plan limit)
+	* check size of audio is less than 160 MB (pinecast plan limit)
 	* Listen to the DRAFT audio (especially the transition points)
 	* Copy to Shared folder for podcast host to review
 
